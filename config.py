@@ -20,7 +20,7 @@ else:
     DATABASE_URL = os.getenv("DATABASE_URL", "sqlite+aiosqlite:///app.db")
 
 # WebApp URLs
-WEBAPP_URL = os.getenv("WEBAPP_URL", "https://web-production-23f85.up.railway.app")
+WEBAPP_URL = os.getenv("WEBAPP_URL", "https://web-production-ca325.up.railway.app")
 SELLER_URL = f"{WEBAPP_URL}/seller?v=3"
 
 # Binance Payment Config (kept for compatibility)
