@@ -1,0 +1,17 @@
+aiogram>=3.4.1
+pyrogram>=2.0.106
+SQLAlchemy>=2.0.28
+aiosqlite>=0.20.0
+python-dotenv>=1.0.1
+pydantic>=2.6.4
+fastapi
+uvicorn
+jinja2
+sqladmin
+itsdangerous
+python-multipart
+phonenumbers
+pycountry
+babel
+requests
+httpx

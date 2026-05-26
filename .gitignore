@@ -1,0 +1,15 @@
+# Environments
+venv/
+env/
+
+# Variables
+.env
+
+# Database
+*.db
+app.db
+app.db-journal
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
