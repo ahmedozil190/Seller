@@ -38,15 +38,7 @@ async def init_db():
                 await conn.execute(text("ALTER TABLE withdrawal_requests ADD COLUMN transaction_id VARCHAR(12)"))
                 print("Successfully added transaction_id column to withdrawal_requests")
             
-            # 2. deposits.method
-            def check_deposit_cols(connection):
-                cursor = connection.execute(text("PRAGMA table_info(deposits)"))
-                return [row[1] for row in cursor]
-            
-            d_cols = await conn.run_sync(check_deposit_cols)
-            if 'method' not in d_cols:
-                await conn.execute(text("ALTER TABLE deposits ADD COLUMN method VARCHAR(50)"))
-                print("Successfully added method column to deposits")
+
 
             # 3. accounts.server_id & hash_code
             def check_account_cols(connection):
